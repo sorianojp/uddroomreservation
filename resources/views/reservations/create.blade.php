@@ -4,7 +4,7 @@
     </x-slot>
     <div class="max-w-full">
         <x-auth-validation-errors />
-        <div class="grid grid-cols-2 gap-2">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-2">
             @include('reservations._includes.cReserve')
             @include('reservations._includes.cReservations')
         </div>
