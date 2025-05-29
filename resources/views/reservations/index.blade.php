@@ -4,7 +4,7 @@
     </x-slot>
     <div class="max-w-full mx-auto">
         <x-auth-session-status :status="session('status')" />
-        <div class="grid grid-cols-3 gap-2">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
             @foreach ($rooms as $room)
                 <x-card>
                     <a href="{{ route('reservations.create', ['roomName' => $room['name']]) }}"
